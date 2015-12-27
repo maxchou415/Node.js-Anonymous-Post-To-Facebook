@@ -19,12 +19,12 @@ app.use(bodyParser.urlencoded({
 app.use(compression());
 server.listen(8080, '0.0.0.0', function() {
   console.log('Ready on http://localhost:8000');
-});
+}); //Run Server On port 8080
 
 
 app.get('/', function(req, res) {
   res.render('index.ejs', {
-    title: '靠北後勁國中'
+    title: '{your facebook page name}' // Insert Your Facebook Page Name
   });
 
 });
@@ -34,11 +34,11 @@ app.route('/post')
     res.render('post.ejs', {
       title: 'Post Success!',
       id: res.id,
-      pagename: '靠北後勁國中'
+      pagename: '{your page name}' // Insert Your Facebook Page Name
     });
     var message = req.body.anony.text;
     FB.setAccessToken(''); //Insert Your Acccess Token
-    FB.api('cbhpjh/feed', 'post', {
+    FB.api('{your facebook page id }/feed', 'post', { //Insert Your Facebook Page Id
       message: message
     }, function(res) {
       if (!res || res.error) {
