@@ -21,7 +21,7 @@ Insert your Facebook Page Name in<br />
 
 
 
-Please Run ``node app`` in Terminal, If all done!
+Please Run ``node app`` or ``node app.js`` in Terminal, If all done!
 
 # Notice
 Server default run on localhost, Port 8080.<br />
