@@ -25,7 +25,8 @@ Please Run ``node app`` or ``node app.js`` in Terminal, If all done!
 
 # Notice
 Server default run on localhost, Port 8080.<br />
-If you want change IP Address or Port, you can edit in  ``app.js:20``.
+If you want change IP Address or Port, you can edit in  ``app.js:20``.<br />
+If you want run on openshift, please read [Offical documentation](https://developers.openshift.com/en/node-js-overview.html) and change ``app.js`` to ``server.js``. 
 
 # Demo
-I will build on Heroku!
+I will build on Openshift!
