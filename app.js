@@ -21,11 +21,6 @@ server.listen(8080, '0.0.0.0', function() {
   console.log('Ready on http://localhost:8000');
 }); //Run Server On port 8080
 
-//Error Page
-app.use(function(req, res) {
-  res.send("404: Page not Found", 404);
-  res.send("500: Service Unavailable", 500);
-});
 
 //Root Page
 app.get('/', function(req, res) {
@@ -58,3 +53,8 @@ app.route('/post')
 
 
   })
+//Error Page
+app.use(function(req, res) {
+  res.send("404: Page not Found", 404);
+  res.send("500: Service Unavailable", 500);
+});
