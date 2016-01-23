@@ -21,14 +21,21 @@ server.listen(8080, '0.0.0.0', function() {
   console.log('Ready on http://localhost:8000');
 }); //Run Server On port 8080
 
+//Error Page
+app.use(function(req, res) {
+  res.send("404: Page not Found", 404);
+  res.send("500: Service Unavailable", 500);
+});
 
+//Root Page
 app.get('/', function(req, res) {
   res.render('index.ejs', {
     title: '{your facebook page name}' // Insert Your Facebook Page Name
   });
 
 });
-//Post
+
+//Post Page
 app.route('/post')
   .post(function(req, res, next) {
     res.render('post.ejs', {
