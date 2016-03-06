@@ -5,7 +5,7 @@
 2. Run ``npm install package.json``
 
 ## Need
-You need creat a application on [Facebook Developer Page](https://developers.facebook.com/apps/)
+You need create a application on [Facebook Developer Page](https://developers.facebook.com/apps/)
 and use that application get a Access Token on [Graph Api Expolor](https://developers.facebook.com/tools/explorer/).
 
 # How to use
